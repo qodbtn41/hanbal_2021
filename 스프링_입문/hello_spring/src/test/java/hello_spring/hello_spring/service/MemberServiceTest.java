@@ -1,12 +1,9 @@
 package hello_spring.hello_spring.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import hello_spring.hello_spring.domain.Member;
@@ -45,7 +42,7 @@ public class MemberServiceTest {
 
         // when
         memberService.join(member1);
-        IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.join(member2));
+        assertThrows(IllegalStateException.class, () -> memberService.join(member2));
 
         /*
          * try { memberService.join(member2); fail(); } catch (Exception e) {

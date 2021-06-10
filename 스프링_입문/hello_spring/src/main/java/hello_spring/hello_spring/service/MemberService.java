@@ -3,12 +3,15 @@ package hello_spring.hello_spring.service;
 import java.util.List;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.stereotype.Service;
 
 import hello_spring.hello_spring.domain.Member;
 import hello_spring.hello_spring.repository.MemberRepository;
 
 @Service
+@Transactional
 public class MemberService {
   private final MemberRepository memberRepository;
 
