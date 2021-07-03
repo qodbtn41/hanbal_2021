@@ -5,7 +5,11 @@ import com.example.demo.repository.MemberRepository;
 import com.example.demo.repository.MemberRepositoryMemory;
 
 public class MemberServiceImpl implements MemberService {
-  private final MemberRepository memberRepository = new MemberRepositoryMemory();
+  private final MemberRepository memberRepository;
+
+  public MemberServiceImpl(MemberRepository memberRepository2) {
+    this.memberRepository = memberRepository2;
+  }
 
   @Override
   public void join(Member member) {

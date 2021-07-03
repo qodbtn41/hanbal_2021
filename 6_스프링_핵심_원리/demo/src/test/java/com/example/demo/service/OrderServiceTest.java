@@ -7,7 +7,6 @@ import com.example.demo.domain.Order;
 import com.example.demo.type.Grade;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 // @SpringBootTest
 public class OrderServiceTest {
