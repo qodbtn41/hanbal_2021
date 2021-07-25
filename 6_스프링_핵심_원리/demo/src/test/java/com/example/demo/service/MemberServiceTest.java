@@ -21,4 +21,14 @@ public class MemberServiceTest {
     Member findMember = memberService.findMember(1L);
     assertEquals(member.getName(), findMember.getName());
   }
+
+  @Test
+  void testFindMember() {
+    
+  }
+
+  @Test
+  void testJoin() {
+    
+  }
 }
