@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import axios from "axios";
 import Movie from "./Movie";
+import "./App.css";
 class App extends React.Component {
   state = {
     isLoading: true,
@@ -26,9 +27,13 @@ class App extends React.Component {
     const { isLoading, movies } = this.state;
     return (
       <div>
-        {isLoading
-          ? "Loading"
-          : movies.map((movie) => {
+        {isLoading ? (
+          <div class="loader">
+            <span class="loader__text">Loading...</span>
+          </div>
+        ) : (
+          <div class="movies">
+            {movies.map((movie) => {
               console.log(movie);
               return (
                 <Movie
@@ -41,6 +46,8 @@ class App extends React.Component {
                 />
               );
             })}
+          </div>
+        )}
       </div>
     );
   }
