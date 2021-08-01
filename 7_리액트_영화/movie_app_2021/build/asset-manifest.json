@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/qodbtn41/hanbal_2021/static/css/main.7c1f9eab.chunk.css",
+    "main.js": "/qodbtn41/hanbal_2021/static/js/main.89d4a0d6.chunk.js",
+    "main.js.map": "/qodbtn41/hanbal_2021/static/js/main.89d4a0d6.chunk.js.map",
+    "runtime-main.js": "/qodbtn41/hanbal_2021/static/js/runtime-main.b591a9e7.js",
+    "runtime-main.js.map": "/qodbtn41/hanbal_2021/static/js/runtime-main.b591a9e7.js.map",
+    "static/js/2.1a34b2ce.chunk.js": "/qodbtn41/hanbal_2021/static/js/2.1a34b2ce.chunk.js",
+    "static/js/2.1a34b2ce.chunk.js.map": "/qodbtn41/hanbal_2021/static/js/2.1a34b2ce.chunk.js.map",
+    "index.html": "/qodbtn41/hanbal_2021/index.html",
+    "static/css/main.7c1f9eab.chunk.css.map": "/qodbtn41/hanbal_2021/static/css/main.7c1f9eab.chunk.css.map",
+    "static/js/2.1a34b2ce.chunk.js.LICENSE.txt": "/qodbtn41/hanbal_2021/static/js/2.1a34b2ce.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b591a9e7.js",
+    "static/js/2.1a34b2ce.chunk.js",
+    "static/css/main.7c1f9eab.chunk.css",
+    "static/js/main.89d4a0d6.chunk.js"
+  ]
+}
