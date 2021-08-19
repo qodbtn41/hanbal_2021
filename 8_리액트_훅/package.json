@@ -1,0 +1,15 @@
+{
+  "name": "hooks",
+  "version": "1.0.0",
+  "description": "react hooks example",
+  "main": "index.js",
+  "author": "BYS",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "create-react-app": "^4.0.3",
+    "hooks": "^0.3.2"
+  }
+}
