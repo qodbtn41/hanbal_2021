@@ -1,16 +1,37 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const useInput = (initialValue) => {
+const content = [
+  {
+    tab: "Section 1",
+    content: "I'm the content of the Section 1",
+  },
+  {
+    tab: "Section 2",
+    content: "I'm the content of the Section 2",
+  },
+];
+const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);
   const onChange = (event) => {
-    console.log(event.target);
+    const {
+      target: { value },
+    } = event;
+    let willUpdate = true;
+    if (typeof validator === "function") {
+      willUpdate = validator(value);
+    }
+    if (willUpdate) {
+      setValue(value);
+    }
   };
   return { value, onChange };
 };
 
 function App() {
-  const name = useInput("Mr.");
+  const maxLength = (value) => value.length < 10;
+  // const special = (value) => !value.includes("@");
+  const name = useInput("Mr.", maxLength);
   return (
     <div className="App">
       <h1>Hello </h1>
