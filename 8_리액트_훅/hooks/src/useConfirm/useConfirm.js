@@ -1,8 +1,8 @@
-const useConfirm = (message = "", callback, rejection) => {
+const useConfirm = (message = "", callback, onCancel) => {
   if (!callback && typeof callback !== "function") {
     return;
   }
-  if (rejection && typeof rejection !== "function") {
+  if (onCancel && typeof onCancel !== "function") {
     return;
   }
 
@@ -10,7 +10,7 @@ const useConfirm = (message = "", callback, rejection) => {
     if (confirm(message)) {
       callback();
     } else {
-      rejection();
+      onCancel();
     }
   };
 
